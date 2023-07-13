@@ -1,0 +1,14 @@
+.Totalamount_container{
+    position: relative;
+    
+    margin:auto;
+    width: 50%;
+    /* left:25% */
+
+}
+@media screen and (max-width:900px) {
+    .Totalamount_container{
+    /* left:0; */
+    width:90%
+    }
+}

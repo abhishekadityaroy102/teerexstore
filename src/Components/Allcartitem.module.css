@@ -1,0 +1,10 @@
+.allcartitem_main_container{
+    max-height: 70vh;
+    
+    overflow-y: scroll;
+
+}
+.allcartitem_main_container::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    
+}

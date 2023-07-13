@@ -24,7 +24,7 @@ export const DataProviderwrapper = ({ children }) => {
       });
     }
   };
-
+  //  This reducer is for cart handlling
   const dispatchcartfunc = (type, payload) => {
     switch (type) {
       case "add_cart": {
@@ -152,12 +152,20 @@ export const DataProviderwrapper = ({ children }) => {
         };
     }
   };
+
+  // dispatchcartfunc reducer  has ended here
+
+  // This function is for getting information about has user's orders confirmed or not
+
   const orderconfirmedstate = () => {
     setinitialdata({
       ...initialdata,
       order_success: true,
     });
   };
+
+  // This Reducer will be run when user will search or filter the data
+
   const dispatchdatafilterfunc = (type, payload) => {
     switch (type) {
       case "checkboxfilter": {
@@ -204,6 +212,8 @@ export const DataProviderwrapper = ({ children }) => {
           initialdata,
         };
       }
+
+      // Filter data when user will search something in search bar
       case "search_filter": {
         let query = payload.toLocaleLowerCase();
         let newarr = initialdata.productdata.filter((el) => {
@@ -233,19 +243,24 @@ export const DataProviderwrapper = ({ children }) => {
         };
     }
   };
+
+  //  dispatchdatafilterfunc reducer has ended here
+
+  // this effect will run when user will enter at first time on website or reload the page
+
   useEffect(() => {
     console.log("i am running every render for getting first time data");
     getalldata();
   }, []);
+
+  // this effect will run when order will be confirmed by user
+
   useEffect(() => {
     if (initialdata.order_success) {
-      console.log("i am running after order placed");
       getalldata();
-      console.log("after running getalldata again", initialdata);
     }
   }, [initialdata.order_success]);
 
-  // console.log("provider", initialdata);
   return (
     <DataProvider.Provider
       value={{

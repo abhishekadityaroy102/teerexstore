@@ -1,41 +1,38 @@
-.form{
- width:95%;
- margin:auto;
- height: 300px;
- position: relative;
- top:10px;
- box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
- /* border:2px solid black; */
+.form {
+  width: 95%;
+  margin: auto;
+  height: 300px;
+  position: relative;
+  top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.form input{
-  width:70%;
+.form input {
+  width: 70%;
   display: block;
   height: 40px;
   margin-top: 10px;
-  border:none;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;; */
+  border: none;
 }
-.form input:hover{
-    border:2px solid pink
+.form input:hover {
+  border: 2px solid pink;
 }
-.form label{
-    text-align: left;
-    font-size: 15px;
-    display: inline-flex;
+.form label {
+  text-align: left;
+  font-size: 15px;
+  display: inline-flex;
 
-    font-weight: bolder;
+  font-weight: bolder;
 }
-.form div{
-    display: flex;
-    width:100%;
-    border:2px solid red;
-    justify-content: space-between;
+.form div {
+  display: flex;
+  width: 100%;
+  border: 2px solid red;
+  justify-content: space-between;
 }
-.paymentpagebox{
-     height: 600px;
-     width:400px;
-     /* /* border:2px solid red; */
-     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
-     margin:auto;
-     position: relative;
+.paymentpagebox {
+  height: 600px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: auto;
+  position: relative;
 }
